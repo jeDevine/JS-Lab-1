@@ -15,18 +15,68 @@ if (pineapplePizza=="Yes") {
     )
 }
 
-for(n = 0; n<=lifeEvents.length; n++){
+for(n = 0; n<lifeEvents.length; n++){
     console.log(lifeEvents[n])
 }
 
 while (true) {
     let randomNumber = Math.floor(Math.random()*10)
     if (randomNumber !== 5) {
-        console.log("randomNumber !==5")
+        console.log(randomNumber + " " + "!==5")
     } else {
     console.log("5===5. it took counter iterations to randomly generate the number 5")
     break;
     }
-    console.log(randomNumber)
+}
+
+console.log("start of extra challenges")
+
+{
+    let hours = 20;
+    let wage = 10;
+    let pay = 0;
+
+    for(let i = 0; i < 7; i++){
+        pay += wage*hours
+    }
+    console.log(`for ${hours} hours at $${wage}/hour, $${pay} is your weekly gross pay`)
+}
+{
+    let hours = 40;
+    let wage = 10;
+    let pay = 0;
+
+    for(let i = 0; i < 7; i++){
+        pay += wage*hours
+    }
+    console.log(`for ${hours} hours at $${wage}/hour, $${pay} is your weekly gross pay`)
+}
+{
+    let hours = 50;
+    let wage = 10;
+    let pay = 0;
+
+    if(hours > 40){
+        wage *= 1.5
+    }
+
+    for(let i = 0; i < 7; i++){
+        pay += wage*hours
+    }
+    console.log(`for ${hours} hours at $${wage}/hour, $${pay} is your weekly gross pay`)
+}
+{
+    let hours = 60;
+    let wage = 12;
+    let pay = 0;
+
+    if(hours > 40){
+        wage *= 1.5
+    }
+
+    for(let i = 0; i < 7; i++){
+        pay += wage*hours
+    }
+    console.log(`for ${hours} hours at $${wage}/hour, $${pay} is your weekly gross pay`)
 }
 
