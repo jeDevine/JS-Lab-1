@@ -32,51 +32,66 @@ while (true) {
 console.log("start of extra challenges")
 
 {
-    let hours = 20;
-    let wage = 10;
-    let pay = 0;
+    {
+        let hours = 20;
+        let wage = 10;
+        let pay = 0;
 
-    for(let i = 0; i < 7; i++){
-        pay += wage*hours
+        for(let i = 0; i < 7; i++){
+            pay += wage*hours
+        }
+        console.log(`for ${hours} hours at $${wage}/hour, $${pay} is your weekly gross pay`)
     }
-    console.log(`for ${hours} hours at $${wage}/hour, $${pay} is your weekly gross pay`)
-}
-{
-    let hours = 40;
-    let wage = 10;
-    let pay = 0;
+    {
+        let hours = 40;
+        let wage = 10;
+        let pay = 0;
 
-    for(let i = 0; i < 7; i++){
-        pay += wage*hours
+        for(let i = 0; i < 7; i++){
+            pay += wage*hours
+        }
+        console.log(`for ${hours} hours at $${wage}/hour, $${pay} is your weekly gross pay`)
     }
-    console.log(`for ${hours} hours at $${wage}/hour, $${pay} is your weekly gross pay`)
-}
-{
-    let hours = 50;
-    let wage = 10;
-    let pay = 0;
+    {
+        let hours = 50;
+        let wage = 10;
+        let pay = 0;
 
-    if(hours > 40){
-        wage *= 1.5
-    }
+        if(hours > 40){
+            wage *= 1.5
+        }
 
-    for(let i = 0; i < 7; i++){
-        pay += wage*hours
+        for(let i = 0; i < 7; i++){
+            pay += wage*hours
+        }
+        console.log(`for ${hours} hours at $${wage}/hour, $${pay} is your weekly gross pay`)
     }
-    console.log(`for ${hours} hours at $${wage}/hour, $${pay} is your weekly gross pay`)
-}
-{
-    let hours = 60;
-    let wage = 12;
-    let pay = 0;
+    {
+        let hours = 60;
+        let wage = 12;
+        let pay = 0;
 
-    if(hours > 40){
-        wage *= 1.5
-    }
+        if(hours > 40){
+            wage *= 1.5
+        }
 
-    for(let i = 0; i < 7; i++){
-        pay += wage*hours
+        for(let i = 0; i < 7; i++){
+            pay += wage*hours
+        }
+        console.log(`for ${hours} hours at $${wage}/hour, $${pay} is your weekly gross pay`)
     }
-    console.log(`for ${hours} hours at $${wage}/hour, $${pay} is your weekly gross pay`)
+    {
+        let hours = 40;
+        let wage = 10;
+        let pay = 0;
+        let count = 0;
+
+        while(pay<1000000){
+            pay += wage*hours
+            count +=1
+        }
+        console.log(`It will take ${count} weeks in order for this person to become a millionar`)
+    }
+    
 }
 
